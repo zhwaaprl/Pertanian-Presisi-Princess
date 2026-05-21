@@ -1,0 +1,378 @@
+:root {
+
+    --primary: #52b788;
+    --primary-dark: #74c69d;
+    --primary-light: #95d5b2;
+
+    --background: #f8fffa;
+    --surface: #ffffff;
+
+    --text: #0f172a;
+    --text-soft: #475569;
+    --text-light: #64748b;
+
+    --border: #dbe7e0;
+
+    --shadow:
+        0 10px 30px rgba(170, 230, 200, 0.35);
+
+    --radius: 22px;
+}
+
+/* =========================================
+GLOBAL
+========================================= */
+
+body {
+
+    background:
+        linear-gradient(
+            180deg,
+            #f8fffa 0%,
+            #f1fff6 100%
+        ) !important;
+
+    color: var(--text) !important;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.stApp {
+
+    background: transparent;
+}
+
+/* =========================================
+ALL TEXT
+========================================= */
+
+p,
+span,
+label,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    color: var(--text) !important;
+}
+
+/* =========================================
+SIDEBAR
+========================================= */
+
+section[data-testid="stSidebar"] {
+
+    background:
+        linear-gradient(
+            180deg,
+            #b7efc5 0%,
+            #95d5b2 100%
+        );
+
+    border: none;
+
+    padding-top: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(170,230,200,0.35);
+}
+
+/* SIDEBAR TEXT */
+
+section[data-testid="stSidebar"] * {
+
+    color: #083344 !important;
+}
+
+/* =========================================
+HEADER PANEL
+========================================= */
+
+.header-panel {
+
+    background:
+        linear-gradient(
+            135deg,
+            #74c69d,
+            #b7efc5
+        );
+
+    padding: 2rem;
+
+    border-radius: 30px;
+
+    margin-bottom: 1.5rem;
+
+    box-shadow: var(--shadow);
+}
+
+.header-panel h1 {
+
+    margin: 0;
+
+    font-size: 2.6rem;
+
+    font-weight: 700;
+
+    color: #083344 !important;
+}
+
+.header-panel p {
+
+    margin-top: 10px;
+
+    color: #134e4a !important;
+
+    font-size: 1rem;
+}
+
+/* =========================================
+METRIC CARD
+========================================= */
+
+.metric-card {
+
+    background: rgba(255,255,255,0.95);
+
+    border-radius: var(--radius);
+
+    padding: 1.5rem;
+
+    border: 1px solid var(--border);
+
+    box-shadow: var(--shadow);
+
+    transition: 0.3s ease;
+}
+
+.metric-card:hover {
+
+    transform: translateY(-5px);
+}
+
+.metric-card-title {
+
+    color: var(--text-soft) !important;
+
+    font-size: 15px;
+
+    margin-bottom: 10px;
+
+    font-weight: 600;
+}
+
+.metric-card-value {
+
+    color: #166534 !important;
+
+    font-size: 2.3rem;
+
+    font-weight: 700;
+}
+
+.metric-card-subtitle {
+
+    color: var(--text-light) !important;
+
+    margin-top: 8px;
+
+    font-size: 14px;
+}
+
+/* =========================================
+BUTTON
+========================================= */
+
+.stButton > button {
+
+    background: #74c69d;
+
+    color: #083344 !important;
+
+    border: none;
+
+    border-radius: 14px;
+
+    padding: 0.85rem 1rem;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 8px 20px rgba(116,198,157,0.35);
+}
+
+.stButton > button:hover {
+
+    background: #95d5b2;
+
+    color: #083344 !important;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================
+INPUT
+========================================= */
+
+.stTextInput input,
+.stNumberInput input,
+.stSelectbox div[data-baseweb="select"] {
+
+    border-radius: 14px !important;
+
+    border: 1px solid #d8f3dc !important;
+
+    background: white !important;
+
+    color: var(--text) !important;
+}
+
+/* LABEL */
+
+.stTextInput label,
+.stNumberInput label,
+.stSelectbox label {
+
+    color: var(--text) !important;
+
+    font-weight: 600;
+}
+
+/* =========================================
+DATAFRAME
+========================================= */
+
+[data-testid="stDataFrame"] {
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+
+    background: white;
+}
+
+[data-testid="stDataFrame"] * {
+
+    color: var(--text) !important;
+}
+
+/* =========================================
+CHART PANEL
+========================================= */
+
+.glass-panel {
+
+    background: rgba(255,255,255,0.96);
+
+    border-radius: 24px;
+
+    padding: 1.5rem;
+
+    border: 1px solid var(--border);
+
+    box-shadow: var(--shadow);
+}
+
+/* =========================================
+AI INSIGHT
+========================================= */
+
+.ai-insight {
+
+    background: #ecfdf5;
+
+    border: 1px solid #bbf7d0;
+
+    border-radius: 20px;
+
+    padding: 1.2rem;
+
+    margin-top: 1rem;
+}
+
+.ai-insight h4 {
+
+    color: #166534 !important;
+
+    margin-bottom: 8px;
+}
+
+.ai-insight p {
+
+    color: #166534 !important;
+
+    margin: 0;
+}
+
+/* =========================================
+STATUS
+========================================= */
+
+.status-green {
+
+    background: #dcfce7;
+
+    color: #166534 !important;
+
+    padding: 10px 15px;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+}
+
+.status-yellow {
+
+    background: #fef9c3;
+
+    color: #854d0e !important;
+
+    padding: 10px 15px;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+}
+
+.status-red {
+
+    background: #fee2e2;
+
+    color: #991b1b !important;
+
+    padding: 10px 15px;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+}
+
+/* =========================================
+TITLE
+========================================= */
+
+h1,
+h2,
+h3 {
+
+    color: #166534 !important;
+}
+
+/* =========================================
+FOOTER
+========================================= */
+
+footer {
+
+    color: var(--text-light) !important;
+}
